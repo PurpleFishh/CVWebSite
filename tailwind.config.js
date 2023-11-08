@@ -12,7 +12,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'bg-main' : "url('../src/resorce/BG_Main_image.svg')",
+        'bg-main' : "url('../src/resorce/BG_Main_Image.svg')",
+        'bg-projects' : "url('../src/resorce/BG_Projects_Image.svg')",
       }
     },
     fontFamily: {
