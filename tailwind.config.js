@@ -19,6 +19,12 @@ module.exports = {
     fontFamily: {
       'body': ['Inter', 'sans-serif']
     },
+    backgroundSize: {
+      'auto': 'auto',
+      'cover': 'cover',
+      'contain': 'contain',
+      'nav_bg_fit': '100vw',
+    },
   },
   plugins: [],
 }
