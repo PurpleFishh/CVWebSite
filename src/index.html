@@ -52,37 +52,193 @@
     </div>
 
     <!--Page 2 - Projects Page -->
-    <div class="snap-start top-0 h-screen w-full bg-top bg-no-repeat bg-bg-projects bg-cover">
+    <div class="snap-start top-0 h-screen w-full bg-top bg-no-repeat  bg-bg-main  bg-cover" style="transform:scaleY(-1);">
+      <!-- Becasue we fliped the bg on Y-Axe we need to flip the contnent of the page again so it will be normal -->
+      <div class="snap-start top-0 h-screen w-full" style="transform:scaleY(-1);">
+        <!-- Navigation Bar -->
+        <div class="flex items-center justify-center w-full">
+          <div class="w-full mx-auto flex items-center justify-center">
+            <div class="w-[978px] h-[47px] rounded-[20px] mt-2 flex justify-end items-end bg-top bg-no-repeat bg-bg-main bg-nav_bg_fit">
+              <div class="pr-5 pb-2 flex justify-end gap-16">
+                <div class="text-text text-[22px] font-semibold font-body">Home</div>
+                <div class="text-accent text-[22px] font-semibold font-body">Projects</div>
+                <div class="text-text text-[22px] font-semibold font-body">Skills</div>
+                <div class=" text-text text-[22px] font-semibold font-body">About</div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <!-- Navigation Bar -->
-      <div class="flex items-center justify-center w-full">
-        <div class="w-full mx-auto flex items-center justify-center">
-          <div class="w-[978px] h-[47px] rounded-[20px] mt-2 flex justify-end items-end bg-top bg-no-repeat bg-bg-main bg-nav_bg_fit">
-            <div class="pr-5 pb-2 flex justify-end gap-16">
-              <div class="text-text text-[22px] font-semibold font-body">Home</div>
-              <div class="text-accent text-[22px] font-semibold font-body">Projects</div>
-              <div class="text-text text-[22px] font-semibold font-body">Skills</div>
-              <div class=" text-text text-[22px] font-semibold font-body">About</div>
+        <!-- Page text box content -->
+        
+        <div>
+          <p class="pl-16 pt-7 text-black text-3xl font-bold font-body">Projects</p>
+          <div class="flex items-center justify-center">
+            <div class="mt-8 flex flex-wrap flex-row items-start justify-center  gap-7 content-around">
+
+              <!-- Project Card -->
+              <div class="relative flex box-border items-center flex-col justify-between w-[430px] h-[230px] rounded-3xl bg-bg">
+                  <!-- Expand project icon-->
+                  <img class="absolute right-3 top-2 w-6 h-6" src="resorce/plus_sign.png" alt="expand">
+                  <!-- Project content -->
+                  <div class="flex flex-row items-start">
+                    <!-- Project Icon -->
+                    <div class="ml-4 mt-5 w-28 h-20 rounded-lg bg-secondary"></div>
+                    <!-- Title and description -->
+                    <div class="ml-2 mt-5 flex-wrap flex-col items-start justify-start">
+                      <p class="text-text text-2xl font-bold font-body w-[290px]">Chicken Project</p>
+                      <p class="text-text box-border w-[285px] text-sm font-medium font-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus magna at ultrices venenatis Nam ultrices urna non dolor semper rutrum. Quisque non nunc at tellus feugiat rhoncus. Donec ut dolor quis lacus fermentum tincidunt. Suspen</p>
+                    </div>
+                  </div>
+                  <!-- Info -->
+                  <div class="mb-3 box-border flex flex-col items-center">
+                    <div class=" w-56 h-1 bg-secondary"></div>
+                    <!-- Language -->
+                    <div class="mt-2 flex flex-row box-border justify-center items-center">
+                      <div class="mr-1 w-2 h-2 bg-java-lang rounded-full"></div>
+                      <p class="text-text text-sm font-medium font-body">Java</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="relative flex box-border items-center flex-col justify-between w-[430px] h-[230px] rounded-3xl bg-bg">
+                <!-- Expand project icon-->
+                <img class="absolute right-3 top-2 w-6 h-6" src="resorce/plus_sign.png" alt="expand">
+                <!-- Project content -->
+                <div class="flex flex-row items-start">
+                  <!-- Project Icon -->
+                  <div class="ml-4 mt-5 w-28 h-20 rounded-lg bg-secondary"></div>
+                  <!-- Title and description -->
+                  <div class="ml-2 mt-5 flex-wrap flex-col items-start justify-start">
+                    <p class="text-text text-2xl font-bold font-body w-[290px]">Chicken Project</p>
+                    <p class="text-text box-border w-[285px] text-sm font-medium font-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus magna at ultrices venenatis Nam ultrices urna non dolor semper rutrum. Quisque non nunc at tellus feugiat rhoncus. Donec ut dolor quis lacus fermentum tincidunt. Suspen</p>
+                  </div>
+                </div>
+                <!-- Info -->
+                <div class="mb-3 box-border flex flex-col items-center">
+                  <div class="rounded-sm w-56 h-1 bg-secondary"></div>
+                  <!-- Language -->
+                  <div class="mt-2 flex flex-row box-border justify-center items-center">
+                    <div class="mr-1 w-2 h-2 bg-java-lang rounded-full"></div>
+                    <p class="text-text text-sm font-medium font-body">Java</p>
+                  </div>
+                </div>
+            </div>
+            <div class="relative flex box-border items-center flex-col justify-between w-[430px] h-[230px] rounded-3xl bg-bg">
+              <!-- Expand project icon-->
+              <img class="absolute right-3 top-2 w-6 h-6" src="resorce/plus_sign.png" alt="expand">
+              <!-- Project content -->
+              <div class="flex flex-row items-start">
+                <!-- Project Icon -->
+                <div class="ml-4 mt-5 w-28 h-20 rounded-lg bg-secondary"></div>
+                <!-- Title and description -->
+                <div class="ml-2 mt-5 flex-wrap flex-col items-start justify-start">
+                  <p class="text-text text-2xl font-bold font-body w-[290px]">Chicken Project</p>
+                  <p class="text-text box-border w-[285px] text-sm font-medium font-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus magna at ultrices venenatis Nam ultrices urna non dolor semper rutrum. Quisque non nunc at tellus feugiat rhoncus. Donec ut dolor quis lacus fermentum tincidunt. Suspen</p>
+                </div>
+              </div>
+              <!-- Info -->
+              <div class="mb-3 box-border flex flex-col items-center">
+                <div class=" w-56 h-1 bg-secondary"></div>
+                <!-- Language -->
+                <div class="mt-2 flex flex-row box-border justify-center items-center">
+                  <div class="mr-1 w-2 h-2 bg-java-lang rounded-full"></div>
+                  <p class="text-text text-sm font-medium font-body">Java</p>
+                </div>
+              </div>
+          </div>
+          <div class="relative flex box-border items-center flex-col justify-between w-[430px] h-[230px] rounded-3xl bg-bg">
+            <!-- Expand project icon-->
+            <img class="absolute right-3 top-2 w-6 h-6" src="resorce/plus_sign.png" alt="expand">
+            <!-- Project content -->
+            <div class="flex flex-row items-start">
+              <!-- Project Icon -->
+              <div class="ml-4 mt-5 w-28 h-20 rounded-lg bg-secondary"></div>
+              <!-- Title and description -->
+              <div class="ml-2 mt-5 flex-wrap flex-col items-start justify-start">
+                <p class="text-text text-2xl font-bold font-body w-[290px]">Chicken Project</p>
+                <p class="text-text box-border w-[285px] text-sm font-medium font-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus magna at ultrices venenatis Nam ultrices urna non dolor semper rutrum. Quisque non nunc at tellus feugiat rhoncus. Donec ut dolor quis lacus fermentum tincidunt. Suspen</p>
+              </div>
+            </div>
+            <!-- Info -->
+            <div class="mb-3 box-border flex flex-col items-center">
+              <div class=" w-56 h-1 bg-secondary"></div>
+              <!-- Language -->
+              <div class="mt-2 flex flex-row box-border justify-center items-center">
+                <div class="mr-1 w-2 h-2 bg-java-lang rounded-full"></div>
+                <p class="text-text text-sm font-medium font-body">Java</p>
+              </div>
+            </div>
+        </div>
+        <div class="relative flex box-border items-center flex-col justify-between w-[430px] h-[230px] rounded-3xl bg-bg">
+          <!-- Expand project icon-->
+          <img class="absolute right-3 top-2 w-6 h-6" src="resorce/plus_sign.png" alt="expand">
+          <!-- Project content -->
+          <div class="flex flex-row items-start">
+            <!-- Project Icon -->
+            <div class="ml-4 mt-5 w-28 h-20 rounded-lg bg-secondary"></div>
+            <!-- Title and description -->
+            <div class="ml-2 mt-5 flex-wrap flex-col items-start justify-start">
+              <p class="text-text text-2xl font-bold font-body w-[290px]">Chicken Project</p>
+              <p class="text-text box-border w-[285px] text-sm font-medium font-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus magna at ultrices venenatis Nam ultrices urna non dolor semper rutrum. Quisque non nunc at tellus feugiat rhoncus. Donec ut dolor quis lacus fermentum tincidunt. Suspen</p>
+            </div>
+          </div>
+          <!-- Info -->
+          <div class="mb-3 box-border flex flex-col items-center">
+            <div class=" w-56 h-1 bg-secondary"></div>
+            <!-- Language -->
+            <div class="mt-2 flex flex-row box-border justify-center items-center">
+              <div class="mr-1 w-2 h-2 bg-java-lang rounded-full"></div>
+              <p class="text-text text-sm font-medium font-body">Java</p>
+            </div>
+          </div>
+      </div>
+      <div class="relative flex box-border items-center flex-col justify-between w-[430px] h-[230px] rounded-3xl bg-bg">
+        <!-- Expand project icon-->
+        <img class="absolute right-3 top-2 w-6 h-6" src="resorce/plus_sign.png" alt="expand">
+        <!-- Project content -->
+        <div class="flex flex-row items-start">
+          <!-- Project Icon -->
+          <div class="ml-4 mt-5 w-28 h-20 rounded-lg bg-secondary"></div>
+          <!-- Title and description -->
+          <div class="ml-2 mt-5 flex-wrap flex-col items-start justify-start">
+            <p class="text-text text-2xl font-bold font-body w-[290px]">Chicken Project</p>
+            <p class="text-text box-border w-[285px] text-sm font-medium font-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus magna at ultrices venenatis Nam ultrices urna non dolor semper rutrum. Quisque non nunc at tellus feugiat rhoncus. Donec ut dolor quis lacus fermentum tincidunt. Suspen</p>
+          </div>
+        </div>
+        <!-- Info -->
+        <div class="mb-3 box-border flex flex-col items-center">
+          <div class=" w-56 h-1 bg-secondary"></div>
+          <!-- Language -->
+          <div class="mt-2 flex flex-row box-border justify-center items-center">
+            <div class="mr-1 w-2 h-2 bg-java-lang rounded-full"></div>
+            <p class="text-text text-sm font-medium font-body">Java</p>
+          </div>
+        </div>
+    </div>
+    
+
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Page text box content -->
-      <div class="flex items-center justify-center">
-        <div class="flex-col inline-flex justify-center w-[445px] ml-[600px] mt-[150px]">
-          <p  class="text-text text-[45px] font-normal font-body h-[55px]">Hello, I am</p >
-          
-          <div class="flex flex-row">
-            <p  class="text-text text-[40px] font-bold font-body mr-3">ASMARANDEI</p >
-            <p  class="text-accent text-[40px] font-bold font-body">CATALIN</p >
+    <!--Page 3 - Projects Page -->
+    <div class="snap-start top-0 h-screen w-full bg-top bg-no-repeat  bg-bg-main  bg-cover" style="transform:scaleY(-1);">
+      <!-- Becasue we fliped the bg on Y-Axe we need to flip the contnent of the page again so it will be normal -->
+      <div class="snap-start top-0 h-screen w-full" style="transform:scaleY(-1);">
+        <!-- Navigation Bar -->
+        <div class="flex items-center justify-center w-full">
+          <div class="w-full mx-auto flex items-center justify-center">
+            <div class="w-[978px] h-[47px] rounded-[20px] mt-2 flex justify-end items-end bg-top bg-no-repeat bg-bg-main bg-nav_bg_fit">
+              <div class="pr-5 pb-2 flex justify-end gap-16">
+                <div class="text-text text-[22px] font-semibold font-body">Home</div>
+                <div class="text-accent text-[22px] font-semibold font-body">Projects</div>
+                <div class="text-text text-[22px] font-semibold font-body">Skills</div>
+                <div class=" text-text text-[22px] font-semibold font-body">About</div>
+              </div>
+            </div>
           </div>
-          <div class="text-justify text-text text-[25px] font-medium font-body">
-            Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Proin eu augue condimentum, gravida nunc rutrum, gravida eros. Nunc tristique
-            pellentesque nunc eget congue
-          </div>
-          
         </div>
       </div>
     </div>
