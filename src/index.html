@@ -9,12 +9,12 @@
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
   </style>
 
-  <link href="/dist/output.css" rel="stylesheet">
+  <link href="./output.css" rel="stylesheet">
 </head>
 
 <body class="m-0 p-0 box-border">
   <!-- Pages Container -->
-  <div class="w-full h-screen overflow-y-scroll" style="scroll-snap-type: y mandatory;">
+  <div class="w-full h-screen overflow-y-scroll scroll-smooth snap-y snap-mandatory">
     <!--Page 1 - Main Page -->
     <div class="snap-start top-0 h-screen w-full bg-top bg-no-repeat bg-bg-main bg-cover">
 
@@ -52,9 +52,9 @@
     </div>
 
     <!--Page 2 - Projects Page -->
-    <div class="snap-start top-0 h-screen w-full bg-top bg-no-repeat  bg-bg-main  bg-cover" style="transform:scaleY(-1);">
+     <div class="snap-start top-0 h-screen w-full bg-top bg-no-repeat  bg-bg-projects  bg-cover"><!-- style="transform:scaleY(-1);"> -->
       <!-- Becasue we fliped the bg on Y-Axe we need to flip the contnent of the page again so it will be normal -->
-      <div class="snap-start top-0 h-screen w-full" style="transform:scaleY(-1);">
+      <!-- <div class="snap-start top-0 h-screen w-full" style="transform:scaleY(-1);"> -->
         <!-- Navigation Bar -->
         <div class="flex items-center justify-center w-full">
           <div class="w-full mx-auto flex items-center justify-center">
@@ -220,29 +220,218 @@
             </div>
           </div>
         </div>
-      </div>
     </div>
 
-    <!--Page 3 - Projects Page -->
-    <div class="snap-start top-0 h-screen w-full bg-top bg-no-repeat  bg-bg-main  bg-cover" style="transform:scaleY(-1);">
-      <!-- Becasue we fliped the bg on Y-Axe we need to flip the contnent of the page again so it will be normal -->
-      <div class="snap-start top-0 h-screen w-full" style="transform:scaleY(-1);">
-        <!-- Navigation Bar -->
-        <div class="flex items-center justify-center w-full">
-          <div class="w-full mx-auto flex items-center justify-center">
-            <div class="w-[978px] h-[47px] rounded-[20px] mt-2 flex justify-end items-end bg-top bg-no-repeat bg-bg-main bg-nav_bg_fit">
-              <div class="pr-5 pb-2 flex justify-end gap-16">
-                <div class="text-text text-[22px] font-semibold font-body">Home</div>
-                <div class="text-accent text-[22px] font-semibold font-body">Projects</div>
-                <div class="text-text text-[22px] font-semibold font-body">Skills</div>
-                <div class=" text-text text-[22px] font-semibold font-body">About</div>
-              </div>
+    <!--Page 3 - Skills Page -->
+    <div class="snap-start top-0 h-screen w-full bg-top bg-no-repeat  bg-bg-skills  bg-cover">
+      <!-- Navigation Bar -->
+      <div class="flex items-center justify-center w-full">
+        <div class="w-full mx-auto flex items-center justify-center">
+          <div class="w-[978px] h-[47px] rounded-[20px] mt-2 flex justify-end items-end bg-top bg-no-repeat bg-bg-main bg-nav_bg_fit">
+            <div class="pr-5 pb-2 flex justify-end gap-16">
+              <div class="text-text text-[22px] font-semibold font-body">Home</div>
+              <div class="text-text text-[22px] font-semibold font-body">Projects</div>
+              <div class="text-accent text-[22px] font-semibold font-body">Skills</div>
+              <div class=" text-text text-[22px] font-semibold font-body">About</div>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Skills -->
+      <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center justify-center w-full pt-24">
+          <p class="text-text text-[35px] font-bold font-body">Skills</p>
+
+          <div class="justify-start items-start gap-[50px] inline-flex">
+            <div class="flex gap-12">
+              <!-- Left Column -->
+              <div class="flex flex-col gap-4">
+                <!-- OOP -->
+                <div class="w-[396px] h-[50px] flex items-center justify-between bg-bg rounded-[20px]">
+                  <p class="ml-3 text-text text-[22px] font-semibold font-body">OOP</p>
+                  <div class="mr-6 w-[220px] h-2 bg-secondary rounded-md">
+                    <div class="w-[150px] h-2 bg-primary rounded-md"></div>
+                  </div>
+                </div>
+                <!-- Python -->
+                <div class="w-[396px] h-[50px] flex items-center justify-between bg-bg rounded-[20px]">
+                  <p class="ml-3 text-text text-[22px] font-semibold font-body">Python</p>
+                  <div class="mr-6 w-[220px] h-2 bg-secondary rounded-md">
+                    <div class="w-[150px] h-2 bg-primary rounded-md"></div>
+                  </div>
+                </div>
+                <!-- C++ -->
+                <div class="w-[396px] h-[50px] flex items-center justify-between bg-bg rounded-[20px]">
+                  <p class="ml-3 text-text text-[22px] font-semibold font-body">C++</p>
+                  <div class="mr-6 w-[220px] h-2 bg-secondary rounded-md">
+                    <div class="w-[150px] h-2 bg-primary rounded-md"></div>
+                  </div>
+                </div>
+                <!-- SQL -->
+                <div class="w-[396px] h-[50px] flex items-center justify-between bg-bg rounded-[20px]">
+                  <p class="ml-3 text-text text-[22px] font-semibold font-body">SQL</p>
+                  <div class="mr-6 w-[220px] h-2 bg-secondary rounded-md">
+                    <div class="w-[150px] h-2 bg-primary rounded-md"></div>
+                  </div>
+                </div>
+              </div>
+              <!-- Right Column -->
+              <div class="flex flex-col gap-4">
+                <!-- Java -->
+                <div class="w-[396px] h-[50px] flex items-center justify-between bg-bg rounded-[20px]">
+                  <p class="ml-3 text-text text-[22px] font-semibold font-body">Java</p>
+                  <div class="mr-6 w-[220px] h-2 bg-secondary rounded-md">
+                    <div class="w-[150px] h-2 bg-primary rounded-md"></div>
+                  </div>
+                </div>
+                <!-- Kotlin -->
+                <div class="w-[396px] h-[50px] flex items-center justify-between bg-bg rounded-[20px]">
+                  <p class="ml-3 text-text text-[22px] font-semibold font-body">Kotlin</p>
+                  <div class="mr-6 w-[220px] h-2 bg-secondary rounded-md">
+                    <div class="w-[150px] h-2 bg-primary rounded-md"></div>
+                  </div>
+                </div>
+                <!-- C -->
+                <div class="w-[396px] h-[50px] flex items-center justify-between bg-bg rounded-[20px]">
+                  <p class="ml-3 text-text text-[22px] font-semibold font-body">C</p>
+                  <div class="mr-6 w-[220px] h-2 bg-secondary rounded-md">
+                    <div class="w-[150px] h-2 bg-primary rounded-md"></div>
+                  </div>
+                </div>
+                <!-- HTML -->
+                <div class="w-[396px] h-[50px] flex items-center justify-between bg-bg rounded-[20px]">
+                  <p class="ml-3 text-text text-[22px] font-semibold font-body">HTML</p>
+                  <div class="mr-6 w-[220px] h-2 bg-secondary rounded-md">
+                    <div class="w-[150px] h-2 bg-primary rounded-md"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hobbies -->
+        <div class="flex flex-col items-center justify-center w-full pt-20">
+          <p class="text-text text-[35px] font-bold font-body">Hobbies</p>
+          <div class = "flex gap-7">
+            <div class="flex items-center justify-center w-52 h-12 bg-bg rounded-[20px]">
+              <p class=" text-text text-[22px] font-semibold font-body">Photoshop</p>
+            </div>
+            <div class="flex items-center justify-center w-52 h-12 bg-bg rounded-[20px]">
+              <p class=" text-text text-[22px] font-semibold font-body">Digital Art</p>
+            </div>
+            <div class="flex items-center justify-center w-52 h-12 bg-bg rounded-[20px]">
+              <p class=" text-text text-[22px] font-semibold font-body">Drawing</p>
+            </div>
+            <div class="flex items-center justify-center w-52 h-12 bg-bg rounded-[20px]">
+              <p class=" text-text text-[22px] font-semibold font-body">Sport</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
+    <!--Page 4 - About Page -->
+    <div class="snap-start top-0 h-screen w-full bg-top bg-no-repeat  bg-bg-skills  bg-cover">
+      <!-- Navigation Bar -->
+      <div class="flex items-center justify-center w-full">
+        <div class="w-full mx-auto flex items-center justify-center">
+          <div class="w-[978px] h-[47px] rounded-[20px] mt-2 flex justify-end items-end bg-top bg-no-repeat bg-bg-main bg-nav_bg_fit">
+            <div class="pr-5 pb-2 flex justify-end gap-16">
+              <div class="text-text text-[22px] font-semibold font-body">Home</div>
+              <div class="text-text text-[22px] font-semibold font-body">Projects</div>
+              <div class="text-text text-[22px] font-semibold font-body">Skills</div>
+              <div class=" text-accent text-[22px] font-semibold font-body">About</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About -->
+      <div class="flex justify-center w-full">
+        <!-- About Container -->
+        <div class="flex flex-row items-center justify-between w-9/12">
+          <!-- About Field -->
+          <div class="flex flex-col justify-center pt-20">
+            <p class="text-text text-[35px] font-bold font-body">About</p>
+            <div class="flex gap-12">
+              <div class="flex flex-col gap-4">
+                <!-- Name -->
+                <div class="w-[390px] h-[55px] flex flex-col justify-center bg-bg rounded-[20px]">
+                  <p class="ml-4 text-text text-lg font-light font-body h-5">Name</p>
+                  <p class="ml-9 text-text text-[22px] font-semibold font-body">Asmarandei Catalin-Gheorghe</p>
+                </div>
+                <!-- From -->
+                <div class="w-[390px] h-[55px] flex flex-col justify-center bg-bg rounded-[20px]">
+                  <p class="ml-4 text-text text-lg font-light font-body h-5">From</p>
+                  <p class="ml-9 text-text text-[22px] font-semibold font-body">From Borlesti, Neamt, Romania</p>
+                </div>
+                <!-- Based In -->
+                <div class="w-[390px] h-[55px] flex flex-col justify-center bg-bg rounded-[20px]">
+                  <p class="ml-4 text-text text-lg font-light font-body h-5">Based in</p>
+                  <p class="ml-9 text-text text-[22px] font-semibold font-body">Iasi, Romania</p>
+                </div>
+                <!-- Birth date -->
+                <div class="w-[390px] h-[55px] flex flex-col justify-center bg-bg rounded-[20px]">
+                  <p class="ml-4 text-text text-lg font-light font-body h-5">Birth date</p>
+                  <p class="ml-9 text-text text-[22px] font-semibold font-body">23.04.2002</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education and Languages Filed-->
+          <div class="flex flex-col justify-center pt-20 gap-10">
+            <div class="flex flex-col">
+              <p class="text-text text-[35px] font-bold font-body">Education</p>
+              <!-- Education -->
+              <div class="w-[550px] h-[140px] flex flex-col justify-center bg-bg rounded-[20px]">
+                <p class="ml-4 text-text text-[22px] font-bold font-body h-8">University "Gheorghe Asachi" of Iasi</p>
+                <p class="ml-4 text-text text-[22px] font-medium font-body h-8">Automatic Control and Computers Engineering</p>
+                <p class="ml-4 text-text text-[22px] font-medium font-body h-8">Department of Computer Science</p>
+                <p class="ml-4 text-text text-[22px] font-medium font-body h-8">2021-2025</p>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <p class="text-text text-[35px] font-bold font-body">Languages</p>
+              <!-- Languages -->
+              <div class="flex flex-col gap-4">
+                <div class="w-[396px] h-[50px] flex items-center justify-between bg-bg rounded-[20px]">
+                  <p class="ml-3 text-text text-[22px] font-semibold font-body">Romanian</p>
+                  <div class="mr-6 w-[220px] h-2 bg-secondary rounded-md">
+                    <div class="w-[150px] h-2 bg-primary rounded-md"></div>
+                  </div>
+                </div>
+                <div class="w-[396px] h-[50px] flex items-center justify-between bg-bg rounded-[20px]">
+                  <p class="ml-3 text-text text-[22px] font-semibold font-body">English</p>
+                  <div class="mr-6 w-[220px] h-2 bg-secondary rounded-md">
+                    <div class="w-[150px] h-2 bg-primary rounded-md"></div>
+                  </div>
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Contact Field -->
+      <div class="flex justify-center w-full">
+        <div class="flex items-center justify-around mt-20 w-5/6 h-[70px] bg-bg rounded-[20px]">
+          <p class="text-text text-[22px] font-semibold font-body">github/PurpleFishh</p>
+          <p class="text-text text-[22px] font-semibold font-body">github/PurpleFishh</p>
+          <p class="text-text text-[22px] font-semibold font-body">github/PurpleFishh</p>
+        </div>
+      </div>
+      
+      
+    </div>
+    <!-- Buttom bar with contact info -->
+    <!-- <div class="relative left-[8.33%] w-full">
+      <div class="absolute bottom-0 w-5/6 h-[80px] bg-bg rounded-tl-[20px] rounded-tr-[20px]">
+      </div>
+    </div> -->
   </div>
 </body>
 </html>

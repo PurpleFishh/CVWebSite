@@ -14,6 +14,7 @@ module.exports = {
       backgroundImage: {
         'bg-main' : "url('../src/resorce/BG_Main_Image.svg')",
         'bg-projects' : "url('../src/resorce/BG_Projects_Image.svg')",
+        'bg-skills' : "url('../src/resorce/BG_Skills_Image.svg')",
       }
     },
     fontFamily: {
