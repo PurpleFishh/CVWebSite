@@ -18,7 +18,8 @@
     <!-- Navigation bar -->
     <nav class="snap-normal flex sticky items-center justify-center w-full top-2 bg-top bg-no-repeat bg-bg-main bg-cover" style="clip-path: inset(0% 17.5% 0% 17.5% round 20px); background-position: top 0.5rem;">
       <div class="w-[65%] h-[47px] rounded-[20px] flex justify-end items-end ">
-        <ul class="pr-5 pb-2 flex justify-end gap-16">
+        <!--  style="gap: calc(100vw / 4.16vw);" -->
+        <ul class="pr-5 pb-2 flex justify-end gap-16"> 
           <li>
             <a href="#home" class="nav_item">Home</a>
           </li>
@@ -46,17 +47,22 @@
             <p  class="text-text text-[40px] font-bold font-body mr-3">ASMARANDEI</p >
             <p  class="text-accent text-[40px] font-bold font-body">CATALIN</p >
           </div>
-          <div class="text-justify text-text text-[25px] font-medium font-body">
-            Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Proin eu augue condimentum, gravida nunc rutrum, gravida eros. Nunc tristique
-            pellentesque nunc eget congue
+          <div class="text-justify text-text text-xl font-medium font-body">
+            <!-- My first love was Java, then the adventure continued loving everything that this environment can offer.
+            Everything started from my childhood passion, Minecraft. That game added the will
+            to create plugins for it which led to the passsion for Java and programming. Despite initially lacking knowledge in Java and OOP
+            but my determination propelled me forward by trying until I succeed.
+            This journey has been marked by continuous learning and exploration, making the love even stronger.  -->
+            My journey began with a passion for Java ignited by my love for Minecraft. The desire of building plugins for the game sparked my
+            interest in programming and Java. Despite starting with limited knowledge of Java and OOP, my determination drove me
+            to learn and succeed. This journey has been marked by continuous learning and exploration, strengthening my love for programming.
           </div>
           
         </div>
       </div>
     </div>
 
-    <!--Page 2 - Projects Page -->
+    <!--Page 2 - Projects Page - 1 -->
     <div class="page_container bg-bg-projects" id="projects"><!-- style="transform:scaleY(-1);"> -->
       <!-- Becasue we fliped the bg on Y-Axe we need to flip the contnent of the page again so it will be normal -->
       <!-- <div class="snap-start top-0 h-screen w-full" style="transform:scaleY(-1);"> -->
@@ -67,10 +73,12 @@
           <div class="pt-11 pl-7 pr-9 pb-6 w-[1344px] h-[512px] rounded-[20px] bg-bg">
             <div class="flex h-full gap-5">
               <div class="flex w-[550px] flex-col h-full">
-                <p class="text-text text-3xl font-bold font-body">Chicken Project</p>
+                <p class="text-text text-3xl font-bold font-body">Beautiful Nightmare</p>
                 <div class = "flex pt-4  items-center">
                   <div class="mr-1 w-3 h-3 bg-java-lang rounded-full"></div>
                   <p class="text-text text-lg font-medium font-body">Java</p>
+                  <div class="ml-9 mr-1 w-3 h-3 bg-sqlite-lang rounded-full"></div>
+                  <p class="text-text text-lg font-medium font-body">SQLite</p>
                 </div>
 
                 <!-- Images carousel section -->
@@ -108,9 +116,11 @@
                         Alpine.data("imageSlider", () => ({
                           currentIndex: 1,
                           images: [
-                            "https://unsplash.it/640/425?image=30",
-                            "https://unsplash.it/640/425?image=40",
-                            "https://unsplash.it/640/425?image=50",
+                            "../src/resorce/projects_img/Level1_1.png",
+                            "../src/resorce/projects_img/Level1_2.png",
+                            "../src/resorce/projects_img/Level2.png",
+                            "../src/resorce/projects_img/Level3.png",
+                            "../src/resorce/projects_img/MainMenu.png",
                           ],
                           previous() {
                             if (this.currentIndex > 1) {
@@ -131,17 +141,34 @@
 
               <div class="pt-5 flex flex-col justify-between w-[794px] h-full ">
                 <div class="h-[90%] overflow-y-scroll">
-                  <p class="text-text text-base font-medium font-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus magna at ultrices venenatis. Nam ultrices urna non dolor semper rutrum. Quisque non nunc at tellus feugiat rhoncus. Donec ut dolor quis lacus fermentum tincidunt. Suspendisse blandit congue pretium. Vivamus bibendum ante posuere elit pharetra, sit amet bibendum neque ullamcorper. Nam lacinia cursus finibus. Etiam sit amet arcu placerat, facilisis dolor vitae, dapibus lacus. Aliquam a rhoncus tellus. Etiam sagittis a nisi mattis facilisis. Aenean sit amet ex nibh. Sed lobortis vitae mauris eget maximus. In faucibus, leo molestie aliquam eleifend, lacus mi suscipit neque, et dapibus nunc massa non orci. Morbi dolor risus, fermentum vel fringilla vel, blandit at sapien. Pellentesque et tincidunt felis. 
-Etiam et lorem luctus, iaculis tortor non, ultricies turpis. Etiam mollis, lacus ac imperdiet laoreet, lorem sapien consequat eros, sit amet rhoncus est tortor vitae nulla. Donec in metus ornare, fringilla felis et, scelerisque felis. Morbi ac gravida dolor. Maecenas venenatis mauris leo, in suscipit erat cursus id. Praesent gravida, ipsum in laoreet suscipit, augue nibh iaculis magna, in vehicula nulla nunc ut tellus. Etiam mollis et turpis et viverra. Integer lacinia interdum eros ac vehicula. In eget ultricies mauris. Sed blandit nisl ac ex congue condimentum. Quisque eu leo sit amet augue ultricies malesuada vel aliquet augue. Cras quis lacinia libero, id tristique lorem. Praesent placerat viverra varius. Vestibulum non nisl sed ex auctor iaculis.
-Etiam mollis eros vel pretium egestas. Nunc sed nibh vitae mi imperdiet auctor id in ipsum. Proin cursus, arcu ac aliquet hendrerit, erat urna volutpat velit, id venenatis ipsum lacus vitae lectus. Suspendisse vehicula rhoncus vestibulum. Sed libero magna, consectetur ut finibus ac, feugiat ut nulla.
-                  </p>
+                  <span class="text-text text-base font-medium font-body">
+                    <h1 class="text-2xl font-bold">Description</h1><br/>
+                    This is a 2D platformer game made in Java using Java AWT Graphics. The game is designed mainly on an Entity Component System(ECS) 
+                    and is using a SQLite database for saving the scores and game level state.<br/><br/>
+                    
+                    <h1 class="text-2xl font-bold">Architectural Design</h1><br/>
+                    The game architecture revolves around the Entity Component System (ECS), with entities serving as the central building blocks.
+                    Entities are essentially empty objects to which components are added to form complete objects. To streamline development,
+                    entities are structured hierarchically, inheriting from a base Object class and extending it with necessary components.<br/><br/>
+
+                    These objects are organized within scenes, forming the foundation of the game's scene system. Scenes are managed using a 
+                    stack-based approach, with the active scene residing at the top of the stack (for example, the pause menu scene takes 
+                    precedence over the game scene when opened). <br/><br/>
+
+                    Animation is handled through state machines, where each animation represents a state, and transitions are triggered by 
+                    specific keys. Sprites represent individual frames of animation, collectively forming dynamic sequences. Keyboard and
+                    mouse input are managed using the observer pattern, with components subscribing to a global listener. When an event occurs,
+                    all subscribed components are notified accordingly. <br/><br/>
+
+                    To facilitate saving and restoring game states, the memento pattern is used, allowing the player and enemyes state to be saved into a SQLite database
+                    at any point in the game. <br/><br/>
+                  </span>
                 </div>
                 
                 <div class="pl-6 pt-2">
-                  <a href="https://github.com/PurpleFishh/SuperBet" class="flex items-center">
+                  <a href="https://github.com/PurpleFishh/BeautifulNightmare" class="flex items-center">
                     <img width="38" height="38" src="https://img.icons8.com/ios-glyphs/40/76D676/github.png" alt="github"/>
-                    <p class="pl-2 text-text text-base font-medium font-body">github/PurpleFishh/ChickenQyest</p>
+                    <p class="pl-2 text-text text-base font-medium font-body">github/PurpleFishh/BeautifulNightmare</p>
                   </a>
                 </div>
               </div>
@@ -150,162 +177,351 @@ Etiam mollis eros vel pretium egestas. Nunc sed nibh vitae mi imperdiet auctor i
         </div>
       
     </div>
-    
-    <!--Page 2 - Projects Page -->
-     <div class="page_container bg-bg-projects" id="projects"><!-- style="transform:scaleY(-1);"> -->
+
+    <!--Page 2 - Projects Page - 2 -->
+    <div class="page_container bg-bg-projects" id="projects"><!-- style="transform:scaleY(-1);"> -->
       <!-- Becasue we fliped the bg on Y-Axe we need to flip the contnent of the page again so it will be normal -->
       <!-- <div class="snap-start top-0 h-screen w-full" style="transform:scaleY(-1);"> -->
         <!-- Page text box content -->
-        
-        <div>
-          <p class="pl-16 pt-7 text-black text-3xl font-bold font-body">Projects</p>
-          <div class="flex items-center justify-center">
-            <div class="mt-8 flex flex-wrap flex-row items-start justify-center  gap-7 content-around">
+        <p class=" pl-16 pt-16 text-text text-3xl font-bold font-body">Projects</p>
+        <div class="pt-7 flex items-center justify-center">
 
-              <!-- Project Card -->
-              <div class="relative flex box-border items-center flex-col justify-between w-[430px] h-[230px] rounded-3xl bg-bg">
-                  <!-- Expand project icon-->
-                  <img class="absolute right-3 top-2 w-6 h-6" src="resorce/plus_sign.png" alt="expand">
-                  <!-- Project content -->
-                  <div class="flex flex-row items-start">
-                    <!-- Project Icon -->
-                    <div class="ml-4 mt-5 w-28 h-20 rounded-lg bg-secondary"></div>
-                    <!-- Title and description -->
-                    <div class="ml-2 mt-5 flex-wrap flex-col items-start justify-start">
-                      <p class="text-text text-2xl font-bold font-body w-[290px]">Chicken Project</p>
-                      <p class="text-text box-border w-[285px] text-sm font-medium font-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus magna at ultrices venenatis Nam ultrices urna non dolor semper rutrum. Quisque non nunc at tellus feugiat rhoncus. Donec ut dolor quis lacus fermentum tincidunt. Suspen</p>
-                    </div>
-                  </div>
-                  <!-- Info -->
-                  <div class="mb-3 box-border flex flex-col items-center">
-                    <div class=" w-56 h-1 bg-secondary"></div>
-                    <!-- Language -->
-                    <div class="mt-2 flex flex-row box-border justify-center items-center">
-                      <div class="mr-1 w-2 h-2 bg-java-lang rounded-full"></div>
-                      <p class="text-text text-sm font-medium font-body">Java</p>
-                    </div>
-                  </div>
-              </div>
-              <div class="relative flex box-border items-center flex-col justify-between w-[430px] h-[230px] rounded-3xl bg-bg">
-                <!-- Expand project icon-->
-                <img class="absolute right-3 top-2 w-6 h-6" src="resorce/plus_sign.png" alt="expand">
-                <!-- Project content -->
-                <div class="flex flex-row items-start">
-                  <!-- Project Icon -->
-                  <div class="ml-4 mt-5 w-28 h-20 rounded-lg bg-secondary"></div>
-                  <!-- Title and description -->
-                  <div class="ml-2 mt-5 flex-wrap flex-col items-start justify-start">
-                    <p class="text-text text-2xl font-bold font-body w-[290px]">Chicken Project</p>
-                    <p class="text-text box-border w-[285px] text-sm font-medium font-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus magna at ultrices venenatis Nam ultrices urna non dolor semper rutrum. Quisque non nunc at tellus feugiat rhoncus. Donec ut dolor quis lacus fermentum tincidunt. Suspen</p>
+          <div class="pt-11 pl-7 pr-9 pb-6 w-[1344px] h-[512px] rounded-[20px] bg-bg">
+            <div class="flex h-full gap-5">
+              <div class="flex w-[550px] flex-col h-full">
+                <p class="text-text text-3xl font-bold font-body">Chicken Quest</p>
+                <div class = "flex pt-4  items-center">
+                  <div class="mr-1 w-3 h-3 bg-cpp-lang rounded-full"></div>
+                  <p class="text-text text-lg font-medium font-body">C++</p>
+                </div>
+
+                <!-- Images carousel section -->
+                <div class="flex h-full justify-center items-center">
+                  <div class="w-[550px] h-[309px] rounded-[10px] bg-secondary">
+                    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+                    <main class="grid w-full place-content-center">
+                        <div x-data="imageSlider2" class="relative mx-auto max-w-2xl overflow-hidden">
+                            <div class="absolute right-5 top-5 z-10 rounded-full bg-secondary px-2 text-center text-sm text-text font-medium font-body">
+                                <span x-text="currentIndex"></span>/<span x-text="images2.length"></span>
+                            </div>
+
+                            <button @click="previous()" class="absolute left-2 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-secondary bg-opacity-60">
+                                <i class="fas fa-chevron-left text-2xl font-bold text-text"></i>
+                            </button>
+
+                            <button @click="forward()" class="absolute right-2 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-secondary bg-opacity-60">
+                                <i class="fas fa-chevron-right text-2xl font-bold text-text"></i>
+                            </button>
+
+                            <div class="w-[550px] h-[309px] overflow-hidden flex justify-center">
+                                <template x-for="(image, index) in images2">
+                                    <div x-show="currentIndex == index + 1" x-transition:enter="transition transform duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition transform duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="absolute top-0">
+                                        <img :src="image" alt="image" class="h-[309px] rounded-xl"/>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </main>
+
+                    <script>
+                      document.addEventListener("alpine:init", () => {
+                        Alpine.data("imageSlider2", () => ({
+                          currentIndex: 1,
+                          images2: [
+                            "../src/resorce/projects_img/Chicken_Quest_Main_Menu.png",
+                            "../src/resorce/projects_img/Chicken_Quest_game.png",
+                          ],
+                          previous() {
+                            if (this.currentIndex > 1) {
+                              this.currentIndex = this.currentIndex - 1;
+                            }
+                          },
+                          forward() {
+                            if (this.currentIndex < this.images2.length) {
+                              this.currentIndex = this.currentIndex + 1;
+                            }
+                          },
+                        }));
+                      });
+                    </script>
                   </div>
                 </div>
-                <!-- Info -->
-                <div class="mb-3 box-border flex flex-col items-center">
-                  <div class="rounded-sm w-56 h-1 bg-secondary"></div>
-                  <!-- Language -->
-                  <div class="mt-2 flex flex-row box-border justify-center items-center">
-                    <div class="mr-1 w-2 h-2 bg-java-lang rounded-full"></div>
-                    <p class="text-text text-sm font-medium font-body">Java</p>
-                  </div>
+              </div>
+
+              <div class="pt-5 flex flex-col justify-between w-[794px] h-full ">
+                <div class="h-[90%] overflow-y-scroll">
+                  <span class="text-text text-base font-medium font-body">
+                    <h1 class="text-2xl font-bold">Description</h1><br/>
+                    2D platformer game made in C++ using OOP principles in SDL2 library<br/><br/>
+                    
+                    <h1 class="text-2xl font-bold">About the game</h1><br/>
+                    The game is about a chicken that needs to fight the dogs that stole the Magic Chocolate Egg from her Town. You need to beat
+                    all the dogs to collect the eggs from every level. Our chicken special ability is that it's eggs explodes. <br/><br/>
+                  
+                    <h1 class="text-2xl font-bold">Architectural Design</h1><br/>
+                    The game's architectural design adheres to the Entity Component System (ECS) pattern, offering the flexibility to
+                    construct entities to which components can be added. These components function akin to properties for the entity,
+                    designed with minimal interdependencies for smoother integration. To streamline ECS usage, entities are instantiated
+                    utilizing the Factory design pattern.<br/><br/>
+
+                    Entities in the game are organized within scenes, each scene comprising distinct layers for effective object ordering and management.
+                    Scenes are stored in a list, enabling selective rendering and updating of the active scene. Modification of scenes and switching
+                    between active scenes can be performed seamlessly at any point.<br/><br/>
+
+                    Entities' colliders are implemented as boxes. For moving objects, collision detection is handled by assessing potential 
+                    collisions with designated objects, such as map tiles, enemies, or attack damage collision boxes. Collision detection is
+                    executed via examination of four collider corners, flagging collisions upon detection.<br/><br/>
+
+                    Map loading is facilitated through file-based parameters, incorporating tile IDs and collision data. This method affords
+                    the flexibility to add or modify maps without necessitating alterations to the game's core codebase. Maps are constructed using 
+                    tiles and exported for integration into the game environment.<br/><br/>
+
+                  </span>
                 </div>
-            </div>
-            <div class="relative flex box-border items-center flex-col justify-between w-[430px] h-[230px] rounded-3xl bg-bg">
-              <!-- Expand project icon-->
-              <img class="absolute right-3 top-2 w-6 h-6" src="resorce/plus_sign.png" alt="expand">
-              <!-- Project content -->
-              <div class="flex flex-row items-start">
-                <!-- Project Icon -->
-                <div class="ml-4 mt-5 w-28 h-20 rounded-lg bg-secondary"></div>
-                <!-- Title and description -->
-                <div class="ml-2 mt-5 flex-wrap flex-col items-start justify-start">
-                  <p class="text-text text-2xl font-bold font-body w-[290px]">Chicken Project</p>
-                  <p class="text-text box-border w-[285px] text-sm font-medium font-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus magna at ultrices venenatis Nam ultrices urna non dolor semper rutrum. Quisque non nunc at tellus feugiat rhoncus. Donec ut dolor quis lacus fermentum tincidunt. Suspen</p>
+                
+                <div class="pl-6 pt-2">
+                  <a href="https://github.com/PurpleFishh/Chicken-Quiest" class="flex items-center">
+                    <img width="38" height="38" src="https://img.icons8.com/ios-glyphs/40/76D676/github.png" alt="github"/>
+                    <p class="pl-2 text-text text-base font-medium font-body">github/PurpleFishh/Chicken-Quest</p>
+                  </a>
                 </div>
               </div>
-              <!-- Info -->
-              <div class="mb-3 box-border flex flex-col items-center">
-                <div class=" w-56 h-1 bg-secondary"></div>
-                <!-- Language -->
-                <div class="mt-2 flex flex-row box-border justify-center items-center">
-                  <div class="mr-1 w-2 h-2 bg-java-lang rounded-full"></div>
-                  <p class="text-text text-sm font-medium font-body">Java</p>
-                </div>
-              </div>
-          </div>
-          <div class="relative flex box-border items-center flex-col justify-between w-[430px] h-[230px] rounded-3xl bg-bg">
-            <!-- Expand project icon-->
-            <img class="absolute right-3 top-2 w-6 h-6" src="resorce/plus_sign.png" alt="expand">
-            <!-- Project content -->
-            <div class="flex flex-row items-start">
-              <!-- Project Icon -->
-              <div class="ml-4 mt-5 w-28 h-20 rounded-lg bg-secondary"></div>
-              <!-- Title and description -->
-              <div class="ml-2 mt-5 flex-wrap flex-col items-start justify-start">
-                <p class="text-text text-2xl font-bold font-body w-[290px]">Chicken Project</p>
-                <p class="text-text box-border w-[285px] text-sm font-medium font-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus magna at ultrices venenatis Nam ultrices urna non dolor semper rutrum. Quisque non nunc at tellus feugiat rhoncus. Donec ut dolor quis lacus fermentum tincidunt. Suspen</p>
-              </div>
             </div>
-            <!-- Info -->
-            <div class="mb-3 box-border flex flex-col items-center">
-              <div class=" w-56 h-1 bg-secondary"></div>
-              <!-- Language -->
-              <div class="mt-2 flex flex-row box-border justify-center items-center">
-                <div class="mr-1 w-2 h-2 bg-java-lang rounded-full"></div>
-                <p class="text-text text-sm font-medium font-body">Java</p>
-              </div>
-            </div>
-        </div>
-        <div class="relative flex box-border items-center flex-col justify-between w-[430px] h-[230px] rounded-3xl bg-bg">
-          <!-- Expand project icon-->
-          <img class="absolute right-3 top-2 w-6 h-6" src="resorce/plus_sign.png" alt="expand">
-          <!-- Project content -->
-          <div class="flex flex-row items-start">
-            <!-- Project Icon -->
-            <div class="ml-4 mt-5 w-28 h-20 rounded-lg bg-secondary"></div>
-            <!-- Title and description -->
-            <div class="ml-2 mt-5 flex-wrap flex-col items-start justify-start">
-              <p class="text-text text-2xl font-bold font-body w-[290px]">Chicken Project</p>
-              <p class="text-text box-border w-[285px] text-sm font-medium font-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus magna at ultrices venenatis Nam ultrices urna non dolor semper rutrum. Quisque non nunc at tellus feugiat rhoncus. Donec ut dolor quis lacus fermentum tincidunt. Suspen</p>
-            </div>
-          </div>
-          <!-- Info -->
-          <div class="mb-3 box-border flex flex-col items-center">
-            <div class=" w-56 h-1 bg-secondary"></div>
-            <!-- Language -->
-            <div class="mt-2 flex flex-row box-border justify-center items-center">
-              <div class="mr-1 w-2 h-2 bg-java-lang rounded-full"></div>
-              <p class="text-text text-sm font-medium font-body">Java</p>
-            </div>
-          </div>
-      </div>
-      <div class="relative flex box-border items-center flex-col justify-between w-[430px] h-[230px] rounded-3xl bg-bg">
-        <!-- Expand project icon-->
-        <img class="absolute right-3 top-2 w-6 h-6" src="resorce/plus_sign.png" alt="expand">
-        <!-- Project content -->
-        <div class="flex flex-row items-start">
-          <!-- Project Icon -->
-          <div class="ml-4 mt-5 w-28 h-20 rounded-lg bg-secondary"></div>
-          <!-- Title and description -->
-          <div class="ml-2 mt-5 flex-wrap flex-col items-start justify-start">
-            <p class="text-text text-2xl font-bold font-body w-[290px]">Chicken Project</p>
-            <p class="text-text box-border w-[285px] text-sm font-medium font-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam luctus magna at ultrices venenatis Nam ultrices urna non dolor semper rutrum. Quisque non nunc at tellus feugiat rhoncus. Donec ut dolor quis lacus fermentum tincidunt. Suspen</p>
           </div>
         </div>
-        <!-- Info -->
-        <div class="mb-3 box-border flex flex-col items-center">
-          <div class=" w-56 h-1 bg-secondary"></div>
-          <!-- Language -->
-          <div class="mt-2 flex flex-row box-border justify-center items-center">
-            <div class="mr-1 w-2 h-2 bg-java-lang rounded-full"></div>
-            <p class="text-text text-sm font-medium font-body">Java</p>
-          </div>
-        </div>
+      
     </div>
-    
 
+    <!--Page 2 - Projects Page - 3 -->
+    <div class="page_container bg-bg-projects" id="projects"><!-- style="transform:scaleY(-1);"> -->
+      <!-- Becasue we fliped the bg on Y-Axe we need to flip the contnent of the page again so it will be normal -->
+      <!-- <div class="snap-start top-0 h-screen w-full" style="transform:scaleY(-1);"> -->
+        <!-- Page text box content -->
+        <p class=" pl-16 pt-16 text-text text-3xl font-bold font-body">Projects</p>
+        <div class="pt-7 flex items-center justify-center">
+
+          <div class="pt-11 pl-7 pr-9 pb-6 w-[1344px] h-[512px] rounded-[20px] bg-bg">
+            <div class="flex h-full gap-5">
+              <div class="flex w-[550px] flex-col h-full">
+                <p class="text-text text-3xl font-bold font-body">DipBet</p>
+                <div class = "flex pt-4  items-center">
+                  <div class="mr-1 w-3 h-3 bg-java-lang rounded-full"></div>
+                  <p class="text-text text-lg font-medium font-body">Java</p>
+                </div>
+
+                <!-- Images carousel section -->
+                <div class="flex h-full justify-center items-center">
+                  <div class="w-[550px] h-[309px] rounded-[10px] bg-secondary">
+                    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+                    <main class="grid w-full place-content-center">
+                        <div x-data="imageSlider3" class="relative mx-auto max-w-2xl overflow-hidden">
+                            <div class="absolute right-5 top-5 z-10 rounded-full bg-secondary px-2 text-center text-sm text-text font-medium font-body">
+                                <span x-text="currentIndex"></span>/<span x-text="images3.length"></span>
+                            </div>
+
+                            <button @click="previous()" class="absolute left-2 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-secondary bg-opacity-60">
+                                <i class="fas fa-chevron-left text-2xl font-bold text-text"></i>
+                            </button>
+
+                            <button @click="forward()" class="absolute right-2 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-secondary bg-opacity-60">
+                                <i class="fas fa-chevron-right text-2xl font-bold text-text"></i>
+                            </button>
+
+                            <div class="w-[550px] h-[309px] overflow-hidden flex justify-center">
+                                <template x-for="(image, index) in images3">
+                                    <div x-show="currentIndex == index + 1" x-transition:enter="transition transform duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition transform duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="absolute top-0">
+                                        <img :src="image" alt="image" class="h-[309px] rounded-xl"/>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </main>
+
+                    <script>
+                      document.addEventListener("alpine:init", () => {
+                        Alpine.data("imageSlider3", () => ({
+                          currentIndex: 1,
+                          images3: [
+                            "../src/resorce/projects_img/DipBet_1.png",
+                            "../src/resorce/projects_img/DipBet_2.png",
+                          ],
+                          previous() {
+                            if (this.currentIndex > 1) {
+                              this.currentIndex = this.currentIndex - 1;
+                            }
+                          },
+                          forward() {
+                            if (this.currentIndex < this.images3.length) {
+                              this.currentIndex = this.currentIndex + 1;
+                            }
+                          },
+                        }));
+                      });
+                    </script>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-5 flex flex-col justify-between w-[794px] h-full ">
+                <div class="h-[90%] overflow-y-scroll">
+                  <span class="text-text text-base font-medium font-body">
+                    <h1 class="text-2xl font-bold">Description</h1><br/>
+                    A plugin done for Minecraft Servers in Java using SpigotAPI. It is using the SpigotAPI to work with the server
+                    getting information about what is happening in the game and interacting with it.<br/><br/>
+                    
+                    <h1 class="text-2xl font-bold">About the game</h1><br/>
+                    DipBet is a betting plugin with the roulette game where the players can bet their money.
+                    Participants can choose from three color options - red, black, or green - and specify the desired
+                    betting amount. In the event of a correct prediction, players stand to win double their bet for red or black,
+                    and a whopping fourteen times their bet for the green color.
+                    The game is using a GUI, is fully configurable, has commands and permission. The plugin is published on the Spigot platform available for download<br/><br/>
+                  
+                    <h1 class="text-2xl font-bold">Architectural Design</h1><br/>
+                    The plugin is centered around the Game class which manages the roulette system. The configuration offers the flexibility to opt for
+                    either a global roulette accessible to all players or individual roulettes for each player. It is implemented in such a way that the
+                    differences between the to is the number of instances of Game class, not being dependent on the game mode. <br/><br/>
+                    
+                    Game states are effectively managed by a state machine, with each state dictating specific behaviors within the game.
+                    It can only transition to the next state when it is triggered, so the changing of game behavior being under control. <br/><br/>
+
+                    A Minecraft server is using Spigot to work with plugins, so for interacting with the server the plugin uses SpigotAPI. The plugin
+                    work with anouther plugin API called Vault to work with the economy system of the server. Lombok is used for enhanced
+                    readability and ease of coding, enabling the generation of getters, setters, and builders through annotations alone. 
+                    Additionally, serialization and deserialization of items and their properties are facilitated by the XItemStack API from Xseries.<br/><br/>
+
+                    The plugin commands are structured according to the Composite design pattern, facilitating efficient organization and execution. 
+                    Command hierarchies are stored in a Trie data structure, where leaf nodes correspond to implemented commands, while non-leaf 
+                    nodes represent command groups. Each node within the Trie is assigned a tag, allowing for the grouping of commands or subgroups 
+                    under a common identifier.<br/><br/>
+
+                    The plugin is created in such a way that everything can be configurable from the config files. Every aspect, from timers to winning
+                    multipliers, GUI appearance to messages and titles, can be modified to suit specific preferences. Every config is a singleton 
+                    implementing a geneneral config interface, loading the data at initialization or on reload making the acces to datas more facile. <br/><br/>
+
+
+                  </span>
+                </div>
+                
+                <div class="pl-6 pt-2 flex gap-11">
+                  <a href="https://github.com/PurpleFishh/DipBet/" class="flex items-center">
+                    <img width="38" height="38" src="https://img.icons8.com/ios-glyphs/40/76D676/github.png" alt="github"/>
+                    <p class="pl-2 text-text text-base font-medium font-body">github/PurpleFishh/DipBet</p>
+                  </a>
+                  <a href="https://www.spigotmc.org/resources/super-bet.69559/" class="flex items-center">
+                    <img width="38" height="38" src="https://img.icons8.com/external-vectorslab-glyph-vectorslab/40/76D676/external-Water-Tap-construction-vectorslab-glyph-vectorslab.png" alt="github"/>
+                    <p class="pl-2 text-text text-base font-medium font-body">spigot/DipBet</p>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+      
+    </div>
+
+    <!--Page 2 - Projects Page - 4 -->
+    <div class="page_container bg-bg-projects" id="projects"><!-- style="transform:scaleY(-1);"> -->
+      <!-- Becasue we fliped the bg on Y-Axe we need to flip the contnent of the page again so it will be normal -->
+      <!-- <div class="snap-start top-0 h-screen w-full" style="transform:scaleY(-1);"> -->
+        <!-- Page text box content -->
+        <p class=" pl-16 pt-16 text-text text-3xl font-bold font-body">Projects</p>
+        <div class="pt-7 flex items-center justify-center">
+
+          <div class="pt-11 pl-7 pr-9 pb-6 w-[1344px] h-[512px] rounded-[20px] bg-bg">
+            <div class="flex h-full gap-5">
+              <div class="flex w-[550px] flex-col h-full">
+                <p class="text-text text-3xl font-bold font-body">Digital-Art Website</p>
+                <div class = "flex pt-4  items-center">
+                  <div class="mr-1 w-3 h-3 bg-html-lang rounded-full"></div>
+                  <p class="text-text text-lg font-medium font-body">HTML</p>
+                  <div class="ml-9 mr-1 w-3 h-3 bg-css-lang rounded-full"></div>
+                  <p class="text-text text-lg font-medium font-body">CSS</p>
+                </div>
+
+                <!-- Images carousel section -->
+                <div class="flex h-full justify-center items-center">
+                  <div class="w-[550px] h-[309px] rounded-[10px] bg-secondary">
+                    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+                    <main class="grid w-full place-content-center">
+                        <div x-data="imageSlider4" class="relative mx-auto max-w-2xl overflow-hidden">
+                            <div class="absolute right-5 top-5 z-10 rounded-full bg-secondary px-2 text-center text-sm text-text font-medium font-body">
+                                <span x-text="currentIndex"></span>/<span x-text="images4.length"></span>
+                            </div>
+
+                            <button @click="previous()" class="absolute left-2 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-secondary bg-opacity-60">
+                                <i class="fas fa-chevron-left text-2xl font-bold text-text"></i>
+                            </button>
+
+                            <button @click="forward()" class="absolute right-2 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-secondary bg-opacity-60">
+                                <i class="fas fa-chevron-right text-2xl font-bold text-text"></i>
+                            </button>
+
+                            <div class="w-[550px] h-[309px] overflow-hidden flex justify-center">
+                                <template x-for="(image, index) in images4">
+                                    <div x-show="currentIndex == index + 1" x-transition:enter="transition transform duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition transform duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="absolute top-0">
+                                        <img :src="image" alt="image" class="h-[309px] rounded-xl"/>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </main>
+
+                    <script>
+                      document.addEventListener("alpine:init", () => {
+                        Alpine.data("imageSlider4", () => ({
+                          currentIndex: 1,
+                          images4: [
+                            "../src/resorce/projects_img/Digital_Art_1.png",
+                            "../src/resorce/projects_img/Digital_Art_2.png",
+                            "../src/resorce/projects_img/Digital_Art_3.png",
+                            "../src/resorce/projects_img/Digital_Art_4.png",
+                          ],
+                          previous() {
+                            if (this.currentIndex > 1) {
+                              this.currentIndex = this.currentIndex - 1;
+                            }
+                          },
+                          forward() {
+                            if (this.currentIndex < this.images4.length) {
+                              this.currentIndex = this.currentIndex + 1;
+                            }
+                          },
+                        }));
+                      });
+                    </script>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-5 flex flex-col justify-between w-[794px] h-full ">
+                <div class="h-[90%] overflow-y-scroll">
+                  <span class="text-text text-base font-medium font-body">
+                    <h1 class="text-2xl font-bold">Description</h1><br/>
+                    A Website done using HTML and CSS<br/><br/>
+                    
+                    <h1 class="text-2xl font-bold">About the site</h1><br/>
+                    The Website presents Digital-Art and its magic. It has information about where it started,and it’s evolution, software
+                    used for digital-art( Photoshop ) and how to work with them and the digital tablets that can be used.<br/><br/>
+                  </span>
+                </div>
+                
+                <div class="pl-6 pt-2 flex gap-11">
+                  <a href="https://github.com/PurpleFishh/Digital-Art-Site" class="flex items-center">
+                    <img width="38" height="38" src="https://img.icons8.com/ios-glyphs/40/76D676/github.png" alt="github"/>
+                    <p class="pl-2 text-text text-base font-medium font-body">github/PurpleFishh/Digital-Art-Site</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
     </div>
 
     <!--Page 3 - Skills Page -->
@@ -324,28 +540,28 @@ Etiam mollis eros vel pretium egestas. Nunc sed nibh vitae mi imperdiet auctor i
                 <div class="w-[396px] h-[50px] flex items-center justify-between bg-bg rounded-[20px]">
                   <p class="ml-3 text-text text-[22px] font-semibold font-body">OOP</p>
                   <div class="mr-6 w-[220px] h-2 bg-secondary rounded-md">
-                    <div class="w-[150px] h-2 bg-primary rounded-md"></div>
+                    <div class="w-[175px] h-2 bg-primary rounded-md"></div>
                   </div>
                 </div>
                 <!-- Python -->
                 <div class="w-[396px] h-[50px] flex items-center justify-between bg-bg rounded-[20px]">
                   <p class="ml-3 text-text text-[22px] font-semibold font-body">Python</p>
                   <div class="mr-6 w-[220px] h-2 bg-secondary rounded-md">
-                    <div class="w-[150px] h-2 bg-primary rounded-md"></div>
+                    <div class="w-[165px] h-2 bg-primary rounded-md"></div>
                   </div>
                 </div>
                 <!-- C++ -->
                 <div class="w-[396px] h-[50px] flex items-center justify-between bg-bg rounded-[20px]">
                   <p class="ml-3 text-text text-[22px] font-semibold font-body">C++</p>
                   <div class="mr-6 w-[220px] h-2 bg-secondary rounded-md">
-                    <div class="w-[150px] h-2 bg-primary rounded-md"></div>
+                    <div class="w-[175px] h-2 bg-primary rounded-md"></div>
                   </div>
                 </div>
                 <!-- SQL -->
                 <div class="w-[396px] h-[50px] flex items-center justify-between bg-bg rounded-[20px]">
                   <p class="ml-3 text-text text-[22px] font-semibold font-body">SQL</p>
                   <div class="mr-6 w-[220px] h-2 bg-secondary rounded-md">
-                    <div class="w-[150px] h-2 bg-primary rounded-md"></div>
+                    <div class="w-[140px] h-2 bg-primary rounded-md"></div>
                   </div>
                 </div>
               </div>
@@ -355,14 +571,14 @@ Etiam mollis eros vel pretium egestas. Nunc sed nibh vitae mi imperdiet auctor i
                 <div class="w-[396px] h-[50px] flex items-center justify-between bg-bg rounded-[20px]">
                   <p class="ml-3 text-text text-[22px] font-semibold font-body">Java</p>
                   <div class="mr-6 w-[220px] h-2 bg-secondary rounded-md">
-                    <div class="w-[150px] h-2 bg-primary rounded-md"></div>
+                    <div class="w-[200px] h-2 bg-primary rounded-md"></div>
                   </div>
                 </div>
                 <!-- Kotlin -->
                 <div class="w-[396px] h-[50px] flex items-center justify-between bg-bg rounded-[20px]">
                   <p class="ml-3 text-text text-[22px] font-semibold font-body">Kotlin</p>
                   <div class="mr-6 w-[220px] h-2 bg-secondary rounded-md">
-                    <div class="w-[150px] h-2 bg-primary rounded-md"></div>
+                    <div class="w-[175px] h-2 bg-primary rounded-md"></div>
                   </div>
                 </div>
                 <!-- C -->
@@ -376,7 +592,7 @@ Etiam mollis eros vel pretium egestas. Nunc sed nibh vitae mi imperdiet auctor i
                 <div class="w-[396px] h-[50px] flex items-center justify-between bg-bg rounded-[20px]">
                   <p class="ml-3 text-text text-[22px] font-semibold font-body">HTML</p>
                   <div class="mr-6 w-[220px] h-2 bg-secondary rounded-md">
-                    <div class="w-[150px] h-2 bg-primary rounded-md"></div>
+                    <div class="w-[140px] h-2 bg-primary rounded-md"></div>
                   </div>
                 </div>
               </div>
@@ -407,7 +623,7 @@ Etiam mollis eros vel pretium egestas. Nunc sed nibh vitae mi imperdiet auctor i
     </div>
 
     <!--Page 4 - About Page -->
-    <div class="page_container bg-bg-skills" id="about">
+    <div class="page_container bg-bg-about" id="about">
       <!-- About -->
       <div class="flex justify-center w-full">
         <!-- About Container -->
@@ -460,13 +676,13 @@ Etiam mollis eros vel pretium egestas. Nunc sed nibh vitae mi imperdiet auctor i
                 <div class="w-[396px] h-[50px] flex items-center justify-between bg-bg rounded-[20px]">
                   <p class="ml-3 text-text text-[22px] font-semibold font-body">Romanian</p>
                   <div class="mr-6 w-[220px] h-2 bg-secondary rounded-md">
-                    <div class="w-[150px] h-2 bg-primary rounded-md"></div>
+                    <div class="w-[210px] h-2 bg-primary rounded-md"></div>
                   </div>
                 </div>
                 <div class="w-[396px] h-[50px] flex items-center justify-between bg-bg rounded-[20px]">
                   <p class="ml-3 text-text text-[22px] font-semibold font-body">English</p>
                   <div class="mr-6 w-[220px] h-2 bg-secondary rounded-md">
-                    <div class="w-[150px] h-2 bg-primary rounded-md"></div>
+                    <div class="w-[170px] h-2 bg-primary rounded-md"></div>
                   </div>
                 </div>
               </div> 
@@ -477,10 +693,19 @@ Etiam mollis eros vel pretium egestas. Nunc sed nibh vitae mi imperdiet auctor i
       
       <!-- Contact Field -->
       <div class="flex justify-center w-full">
-        <div class="flex items-center justify-around mt-20 w-5/6 h-[70px] bg-bg rounded-[20px]">
-          <p class="text-text text-[22px] font-semibold font-body">github/PurpleFishh</p>
-          <p class="text-text text-[22px] font-semibold font-body">github/PurpleFishh</p>
-          <p class="text-text text-[22px] font-semibold font-body">github/PurpleFishh</p>
+        <div class="flex items-center justify-around mt-20 w-5/6 h-[60px] bg-bg rounded-[20px]">
+          <a href="https://github.com/PurpleFishh/" class="flex items-center">
+            <img width="45" height="45" src="https://img.icons8.com/ios-glyphs/60/76D676/github.png" alt="github"/>
+            <p class="pl-2 text-text text-[22px] font-semibold font-body">github/PurpleFishh/</p>
+          </a>
+          <div class="flex items-center">
+            <img width="42" height="42" src="https://img.icons8.com/ios-filled/60/76D676/gmail.png" alt="github"/>
+            <p class="pl-2 text-text text-[22px] font-semibold font-body">asmarandei.catalin@yahoo.com</p>
+          </div>
+          <a href="https://www.spigotmc.org/resources/authors/purplefishh.281402/" class="flex items-center">
+            <img width="42" height="42" src="https://img.icons8.com/external-vectorslab-glyph-vectorslab/60/76D676/external-Water-Tap-construction-vectorslab-glyph-vectorslab.png" alt="github"/>
+            <p class="pl-2 text-text text-[22px] font-semibold font-body">spigot/PurpleFishh</p>
+          </a>
         </div>
       </div>
       
