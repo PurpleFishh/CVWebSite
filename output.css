@@ -1044,19 +1044,19 @@ video {
 }
 
 .bg-bg-about {
-  background-image: url('../src/resorce/BG_About_Image.svg');
+  background-image: url('resorce/BG_About_Image.svg');
 }
 
 .bg-bg-main {
-  background-image: url('../src/resorce/BG_Main_Image.svg');
+  background-image: url('resorce/BG_Main_Image.svg');
 }
 
 .bg-bg-projects {
-  background-image: url('../src/resorce/BG_Projects_Image.svg');
+  background-image: url('resorce/BG_Projects_Image.svg');
 }
 
 .bg-bg-skills {
-  background-image: url('../src/resorce/BG_Skills_Image.svg');
+  background-image: url('resorce/BG_Skills_Image.svg');
 }
 
 .bg-gradient-to-r {

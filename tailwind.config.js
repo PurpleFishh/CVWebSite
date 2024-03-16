@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./**/*.{html,js}"],
   theme: {
     colors: {
       'primary' : '#76D676',
@@ -16,10 +16,10 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'bg-main' : "url('../src/resorce/BG_Main_Image.svg')",
-        'bg-projects' : "url('../src/resorce/BG_Projects_Image.svg')",
-        'bg-skills' : "url('../src/resorce/BG_Skills_Image.svg')",
-        'bg-about' : "url('../src/resorce/BG_About_Image.svg')",
+        'bg-main' : "url('../resorce/BG_Main_Image.svg')",
+        'bg-projects' : "url('../resorce/BG_Projects_Image.svg')",
+        'bg-skills' : "url('../resorce/BG_Skills_Image.svg')",
+        'bg-about' : "url('../resorce/BG_About_Image.svg')",
       }
     },
     fontFamily: {
