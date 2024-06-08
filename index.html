@@ -189,6 +189,127 @@
           <div class="pt-11 pl-7 pr-9 pb-6 w-[1344px] h-[512px] rounded-[20px] bg-bg">
             <div class="flex h-full gap-5">
               <div class="flex w-[550px] flex-col h-full">
+                <p class="text-text text-3xl font-bold font-body">BookShop.net</p>
+                <div class = "flex pt-4  items-center">
+                  <div class="mr-1 w-3 h-3 bg-c#-lang rounded-full"></div>
+                  <p class="text-text text-lg font-medium font-body">C#</p>
+                  <div class="ml-9 mr-1 w-3 h-3 bg-blazor-lang rounded-full"></div>
+                  <p class="text-text text-lg font-medium font-body">.Net Blazor</p>
+                </div>
+
+                <!-- Images carousel section -->
+                <div class="flex h-full justify-center items-center">
+                  <div class="w-[550px] h-[309px] rounded-[10px] bg-secondary">
+                    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+                    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+                    <main class="grid w-full place-content-center">
+                        <div x-data="imageSlider6" class="relative mx-auto max-w-2xl overflow-hidden">
+                            <div class="absolute right-5 top-5 z-10 rounded-full bg-secondary px-2 text-center text-sm text-text font-medium font-body">
+                                <span x-text="currentIndex"></span>/<span x-text="images.length"></span>
+                            </div>
+
+                            <button @click="previous()" class="absolute left-2 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-secondary bg-opacity-60">
+                                <i class="fas fa-chevron-left text-2xl font-bold text-text"></i>
+                            </button>
+
+                            <button @click="forward()" class="absolute right-2 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-secondary bg-opacity-60">
+                                <i class="fas fa-chevron-right text-2xl font-bold text-text"></i>
+                            </button>
+
+                            <div class="w-[550px] h-[309px] overflow-hidden flex justify-center">
+                                <template x-for="(image, index) in images">
+                                    <div x-show="currentIndex == index + 1" x-transition:enter="transition transform duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition transform duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="absolute top-0">
+                                        <img :src="image" alt="image" class="h-[309px] rounded-xl"/>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </main>
+
+                    <script>
+                      document.addEventListener("alpine:init", () => {
+                        Alpine.data("imageSlider6", () => ({
+                          currentIndex: 1,
+                          images: [
+                            "resorce/projects_img/bookshop_client1.png",
+                            "resorce/projects_img/bookshop_client2.png",
+                            "resorce/projects_img/bookshop_client3.png",
+                            "resorce/projects_img/bookshop_provider1.png",
+                            "resorce/projects_img/bookshop_admin1.png",
+                            "resorce/projects_img/bookshop_admin2.png",
+                          ],
+                          previous() {
+                            if (this.currentIndex > 1) {
+                              this.currentIndex = this.currentIndex - 1;
+                            }
+                          },
+                          forward() {
+                            if (this.currentIndex < this.images.length) {
+                              this.currentIndex = this.currentIndex + 1;
+                            }
+                          },
+                        }));
+                      });
+                    </script>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-5 flex flex-col justify-between w-[794px] h-full ">
+                <div class="h-[90%] overflow-y-scroll">
+                  <span class="text-text text-base font-medium font-body">
+                    <h1 class="text-2xl font-bold">Description</h1><br/>
+                    The project was a team effort consisting of three members. We developed a simple bookstore platform with essential shop
+                    functionalities using C# and .Net Blazor for the client part. The platform utilizes a Sqlite database to store product
+                    and user information.
+                    <br/><br/>
+                    The project comprises three distinct applications: client, provider, and admin. Each application interacts with the
+                    business layer. The client application enables users to log in, register, view, and filter products by category,
+                    price, and search terms, manage their shopping cart, add personal information, place orders, and view their order
+                    history. The provider application allows providers to log in, view product stock, and add new products. The admin
+                    application facilitates admin login, viewing product statistics, adding providers, and managing users, including
+                    viewing and deleting user accounts.
+                    
+                    <br/><br/>
+                    
+                    <h1 class="text-2xl font-bold">Architectural Design</h1><br/>
+                    The architectural design follows a layered pattern suitable for the application's requirements. 
+                    The presentation layer is divided into three parts corresponding to the client, provider, and admin applications.
+                    The business layer includes services for authentication, privacy, and other business logic. It also defines Business
+                    Transfer Objects (BTOs) for presentation-related logic. 
+                    <br/><br/>
+                    The persistence layer contains repositories that handle CRUD operations for each entity and defines Data Transfer Objects
+                    (DTOs) for data flow between the business and presentation layers. The commons layer encompasses general-purpose utilities,
+                    such as a scoped logger and a generic result pattern implementation. The integration layer includes unit tests for the
+                    persistence and business layers and supports database seeding.
+                  </span>
+                </div>
+                
+                <div class="pl-6 pt-2">
+                  <a href="https://github.com/DamirDenis-Tudor/BookStore.NET" class="flex items-center">
+                    <img width="38" height="38" src="https://img.icons8.com/ios-glyphs/40/76D676/github.png" alt="github"/>
+                    <p class="pl-2 text-text text-base font-medium font-body">github.com/DamirDenis-Tudor/BookStore.NET</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+
+    <!--Page 2 - Projects Page - 3 -->
+    <div class="page_container bg-bg-projects" id="projects"><!-- style="transform:scaleY(-1);"> -->
+      <!-- Becasue we fliped the bg on Y-Axe we need to flip the contnent of the page again so it will be normal -->
+      <!-- <div class="snap-start top-0 h-screen w-full" style="transform:scaleY(-1);"> -->
+        <!-- Page text box content -->
+        <p class=" pl-16 pt-16 text-text text-3xl font-bold font-body">Projects</p>
+        <div class="pt-7 flex items-center justify-center">
+
+          <div class="pt-11 pl-7 pr-9 pb-6 w-[1344px] h-[512px] rounded-[20px] bg-bg">
+            <div class="flex h-full gap-5">
+              <div class="flex w-[550px] flex-col h-full">
                 <p class="text-text text-3xl font-bold font-body">Chicken Quest</p>
                 <div class = "flex pt-4  items-center">
                   <div class="mr-1 w-3 h-3 bg-cpp-lang rounded-full"></div>
@@ -294,7 +415,7 @@
       
     </div>
 
-    <!--Page 2 - Projects Page - 3 -->
+    <!--Page 2 - Projects Page - 4 -->
     <div class="page_container bg-bg-projects" id="projects"><!-- style="transform:scaleY(-1);"> -->
       <!-- Becasue we fliped the bg on Y-Axe we need to flip the contnent of the page again so it will be normal -->
       <!-- <div class="snap-start top-0 h-screen w-full" style="transform:scaleY(-1);"> -->
@@ -423,7 +544,7 @@
       
     </div>
 
-    <!--Page 2 - Projects Page - 4 -->
+    <!--Page 2 - Projects Page - 5 -->
     <div class="page_container bg-bg-projects" id="projects"><!-- style="transform:scaleY(-1);"> -->
       <!-- Becasue we fliped the bg on Y-Axe we need to flip the contnent of the page again so it will be normal -->
       <!-- <div class="snap-start top-0 h-screen w-full" style="transform:scaleY(-1);"> -->

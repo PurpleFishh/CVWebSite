@@ -13,6 +13,8 @@ module.exports = {
       'css-lang' : '#7688b3',
       'cpp-lang' : '#46c9e0',
       'sqlite-lang' : '#0a4b6e',
+      'c#-lang' : '#A45179',
+      'blazor-lang' : '#7E1648',
     },
     extend: {
       backgroundImage: {
